@@ -41,6 +41,10 @@ header {
     @include image;
 }
 
+h1 {
+    @include type($blue);
+}
+
 .navigation ul{
   padding:0;
   li{
@@ -49,23 +53,23 @@ header {
       display: block;
       padding: .5em 1em;
       text-align: center;
-      border-bottom: 1px solid $light-pink;
+      border-bottom: 1px solid $blue;
       text-decoration: none;
     }
     &:first-child a{
-      border-top: 1px solid $light-pink;
+      border-top: 1px solid $blue;
     }
   } // li
 } // .navigation ul
 
 .toggle-btn,
 .close-btn{
-  color: $light-pink;
+  color: $blue;
 	text-decoration: none;
 	height: 40px;
 	width: 40px;
 	&:before{
-		border: 1px solid $light-pink;
+		border: 1px solid $blue;
 		padding: 13px 11px;
 		height: 40px;
 		width: 40px;
