@@ -1,6 +1,12 @@
-// Variables
+$yellow: #ffcc00;
+$light-yellow: #ffe066;
+$pink: #ff66cb;
+$light-pink: #ffb3e5;
+$white: #fff;
 
-$light-grey: #ccc;
-$dark-grey: #222;
+$primary: $yellow;
+$secondary: $pink;
 
-$text-color: $dark-grey;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+$helvetica: Helvetica, Arial, sans-serif;
+$open-sans: 'Open Sans', sans-serif

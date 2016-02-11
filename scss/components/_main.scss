@@ -21,7 +21,6 @@ html {
 body{
   font-family: sans-serif;
   @include zero;
-  // Hides close button if there is no js
   &.noscript .close-btn,
   &.noscript .toggle-btn{
       display: none;
@@ -46,23 +45,23 @@ header {
       display: block;
       padding: .5em 1em;
       text-align: center;
-      border-bottom: 1px solid $light-grey;
+      border-bottom: 1px solid $light-pink;
       text-decoration: none;
     }
     &:first-child a{
-      border-top: 1px solid $light-grey;
+      border-top: 1px solid $light-pink;
     }
   } // li
 } // .navigation ul
 
 .toggle-btn,
 .close-btn{
-  color: $text-color;
+  color: $light-pink;
 	text-decoration: none;
 	height: 40px;
 	width: 40px;
 	&:before{
-		border: 1px solid $light-grey;
+		border: 1px solid $light-pink;
 		padding: 13px 11px;
 		height: 40px;
 		width: 40px;
