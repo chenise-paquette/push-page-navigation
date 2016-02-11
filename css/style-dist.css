@@ -57,6 +57,7 @@ h1 {
   font-size: 1.5em;
   text-align: left;
   font-family: "Open Sans", sans-serif;
+  display: block;
 }
 
 main {
@@ -87,12 +88,7 @@ main {
   display: block;
   padding: .5em 1em;
   text-align: center;
-  border-bottom: 1px solid #8facd1;
   text-decoration: none;
-}
-
-.navigation ul li:first-child a {
-  border-top: 1px solid #8facd1;
 }
 
 .toggle-btn,
@@ -105,7 +101,6 @@ main {
 
 .toggle-btn:before,
 .close-btn:before {
-  border: 1px solid #8facd1;
   padding: 13px 11px;
   height: 40px;
   width: 40px;
@@ -159,6 +154,14 @@ main {
     padding: 0;
     min-height: 800px;
   }
+  .navigation {
+    position: absolute;
+    width: 100%;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    min-height: 800px;
+  }
 }
 
 @media only screen and (min-width: 60em) {
@@ -166,6 +169,27 @@ main {
   .close-btn {
     display: none;
   }
+}
+
+.navigation ul {
+  display: inline-block;
+  position: absolute;
+  right: -4em;
+  top: -6em;
+  color: #ccc;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul a {
+  font-size: .85em;
+  color: #ccc;
+}
+
+.navigation ul a:hover, .navigation ul a:active .navigation ul a:focus {
+  opacity: 0.2;
 }
 
 body.noscript .slide-menu {
