@@ -32,3 +32,10 @@
     margin: 0 auto;
     width:100%;
 }
+
+@mixin type($color){
+    color: $color;
+    font-size: 1.5em;
+    text-align:left;
+    font-family: $opensans;
+}
