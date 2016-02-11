@@ -41,6 +41,10 @@ h1 {
     @include type($blue);
 }
 
+main {
+    height: 40em;
+}
+
 .image {
     @include image;
 }
@@ -50,7 +54,7 @@ h1 {
 }
 
 .navigation ul{
-  padding:0;
+  padding: 5em;
   li{
     list-style-type: none;
     a{
