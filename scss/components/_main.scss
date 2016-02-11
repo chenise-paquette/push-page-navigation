@@ -37,12 +37,16 @@ header {
   }
 }
 
+h1 {
+    @include type($blue);
+}
+
 .image {
     @include image;
 }
 
-h1 {
-    @include type($blue);
+.list {
+    color: $dark-blue;
 }
 
 .navigation ul{
@@ -59,8 +63,8 @@ h1 {
     &:first-child a{
       border-top: 1px solid $blue;
     }
-  } // li
-} // .navigation ul
+  } 
+} 
 
 .toggle-btn,
 .close-btn{
@@ -84,13 +88,6 @@ h1 {
   margin: 1em;
 }
 
-
-/**
- * Sliding Navigation
- */
-
-// Page should move when nav opens
-// only time we will ever use max-width
 @media only screen and (max-width: 60em){
   .site-wrapper{
     position: relative;
@@ -110,14 +107,14 @@ h1 {
     }
 
     &[data-state='slide-open']{
-      // Allow expansion of navigation past page height, when open
+      
       overflow:visible;
     }
   }
 
-  // Nav styles
+  
   .slide-menu{
-    //creates sliding effect
+    
     position: absolute;
     width: 100%;
     right: -100%;
@@ -129,7 +126,6 @@ h1 {
   }
 }
 
-// Resets page when desktop, even if nav is toggled open
 @media only screen and (min-width: 60em) {
   .toggle-btn,
   .close-btn{

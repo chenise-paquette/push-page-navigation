@@ -52,16 +52,23 @@ header .toggle-btn {
   top: 0;
 }
 
-.image {
-  margin: 0 auto;
-  width: 100%;
-}
-
 h1 {
   color: #8facd1;
   font-size: 1.5em;
   text-align: left;
   font-family: "Open Sans", sans-serif;
+}
+
+.image {
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  background-size: cover;
+  text-align: center;
+}
+
+.list {
+  color: #2980b9;
 }
 
 .navigation ul {
@@ -114,9 +121,6 @@ h1 {
   margin: 1em;
 }
 
-/**
- * Sliding Navigation
- */
 @media only screen and (max-width: 60em) {
   .site-wrapper {
     position: relative;
