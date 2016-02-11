@@ -37,6 +37,10 @@ header {
   }
 }
 
+.image {
+    @include image;
+}
+
 .navigation ul{
   padding:0;
   li{

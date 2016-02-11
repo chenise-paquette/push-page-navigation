@@ -52,6 +52,11 @@ header .toggle-btn {
   top: 0;
 }
 
+.image {
+  margin: 0 auto;
+  width: 100%;
+}
+
 .navigation ul {
   padding: 0;
 }
